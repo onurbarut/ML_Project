@@ -1,1 +1,3 @@
-# Preprocessing of dataset
+### Preprocessing of dataset
+
+# Normalization
