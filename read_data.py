@@ -42,9 +42,9 @@ def main():
 	data = read_data(dataset)
 	data = clean_data(data)
 	# exclude ID and class label
-	d_matrix = data.as_matrix(columns=data.columns[1:-1])
+	d_matrix = data.values(columns=data.columns[1:-1])
 	# extract class labels in y vector:
-	y = data.as_matrix(columns=data.columns[-1:])
+	y = data.values(columns=data.columns[-1:])
 
 
 
