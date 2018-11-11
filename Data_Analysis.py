@@ -69,7 +69,7 @@ def main():
 		plt.savefig(directory+'/'+'CorrMat.png')
 	plt.close()
 
-	corrArray = Data.corr().as_matrix()[-1,:]
+	corrArray = Data.corr().values()[-1,:]
 	corrFrame = pd.DataFrame(data=corrArray,
 								index=names,
 								columns=['Correlation'])
